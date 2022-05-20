@@ -10,9 +10,11 @@ type CreateResponse struct {
 }
 
 type TodoResponse struct {
-	ID    uint   `json:"id"`
-	Name  string `json:"name"`
-	Email string `json:"email"`
+	ID          uint   `json:"id"`
+	Todo        string `json:"email"`
+	Description string `json:"description"`
+	Status      string `json:"status"`
+	UserID      uint
 }
 
 func RegisterSuccess(data TodoResponse) map[string]interface{} {
